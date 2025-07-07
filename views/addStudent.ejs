@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student Location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #8e44ad;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #732d91;
+    }
+
+    .manual-fields {
+      display: none;
+      margin-top: 15px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .success {
+      color: green;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add New Student</h2>
+    <div id="statusMessage" class=""></div>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" placeholder="e.g., Rashid Khan">
+
+    <label for="hobby">Hobby:</label>
+    <input type="text" id="hobby" placeholder="e.g., Music">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="e.g., Andheri West, Mumbai">
+
+    <button onclick="submitForm()">Add Student</button>
+
+    <div class="manual-fields" id="manualFields">
+      <p style="color: #d35400;">Couldn't detect coordinates. Please enter manually:</p>
+      <label for="manualLat">Latitude:</label>
+      <input type="number" id="manualLat" placeholder="e.g., 19.1234" step="any">
+
+      <label for="manualLng">Longitude:</label>
+      <input type="number" id="manualLng" placeholder="e.g., 72.8369" step="any">
+
+      <button onclick="submitManual()">Submit with Manual Coordinates</button>
+    </div>
+  </div>
+
+  <script>
+    let studentTemp = null;
+
+    async function submitForm() {
+      const name = document.getElementById('name').value.trim();
+      const hobby = document.getElementById('hobby').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const status = document.getElementById('statusMessage');
+
+      if (!name || !hobby || !address) {
+        status.className = 'error';
+        status.textContent = 'Please fill all fields.';
+        return;
+      }
+
+      status.className = '';
+      status.textContent = 'Trying to fetch coordinates...';
+
+      try {
+        const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`);
+        const data = await res.json();
+
+        if (data && data.length > 0) {
+          const lat = parseFloat(data[0].lat);
+          const lng = parseFloat(data[0].lon);
+          saveStudent({ name, hobby, address, lat, lng });
+        } else {
+          studentTemp = { name, hobby, address };
+          document.getElementById('manualFields').style.display = 'block';
+          status.className = 'error';
+          status.textContent = 'Could not find coordinates. Please enter manually.';
+        }
+      } catch (err) {
+        console.error(err);
+        studentTemp = { name, hobby, address };
+        document.getElementById('manualFields').style.display = 'block';
+        status.className = 'error';
+        status.textContent = 'Error fetching coordinates. Please enter manually.';
+      }
+    }
+
+    function submitManual() {
+      const lat = parseFloat(document.getElementById('manualLat').value);
+      const lng = parseFloat(document.getElementById('manualLng').value);
+      const status = document.getElementById('statusMessage');
+
+      if (isNaN(lat) || isNaN(lng)) {
+        status.className = 'error';
+        status.textContent = 'Enter valid latitude and longitude.';
+        return;
+      }
+
+      saveStudent({ ...studentTemp, lat, lng });
+    }
+
+    function saveStudent(student) {
+      console.log("Student to save:", student);
+      const status = document.getElementById('statusMessage');
+      status.className = 'success';
+      status.textContent = 'Student added successfully! (Check console for output)';
+      
+      // Here you can POST to backend or store as needed.
+      // Example: fetch('/addStudent', { method: 'POST', body: JSON.stringify(student) })
+
+      // Reset form
+      document.getElementById('name').value = '';
+      document.getElementById('hobby').value = '';
+      document.getElementById('address').value = '';
+      document.getElementById('manualLat').value = '';
+      document.getElementById('manualLng').value = '';
+      document.getElementById('manualFields').style.display = 'none';
+      studentTemp = null;
+    }
+  </script>
+</body>
+</html>

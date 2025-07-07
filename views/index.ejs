@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <style>
+      #map {
+        height: 600px;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8f8f8;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      label,
+      select {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 16px;
+      }
+      #sidebar {
+        position: absolute;
+        left: 10px;
+        top: 245px;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        max-height: 450px;
+        overflow-y: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 280px;
+      }
+      #sidebar h3 {
+        margin-top: 0;
+        color: #8e44ad;
+      }
+      #zoneStudentList {
+        list-style: none;
+        padding: 0;
+        font-size: 14px;
+      }
+      #zoneStudentList li {
+        padding: 5px 0;
+        cursor: pointer;
+      }
+      .studio-title {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      .student-name {
+        margin-left: 10px;
+        font-size: 13px;
+        color: #333;
+      }
+      #toggleZonesBtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1000;
+        padding: 8px 12px;
+        background: #8e44ad;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .distance-label {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        color: #000000;
+        width: 56px !important;
+        text-box: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Locations Across India</h1>
+
+    <label for="hobbyFilter">Filter by Hobby:</label>
+    <select id="hobbyFilter">
+      <option value="all">All Hobbies</option>
+    </select>
+
+    <button id="toggleZonesBtn">Hide Studio Zones</button>
+
+    <div
+      style="
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+      "
+    >
+      <div style="color: #3498db"><strong>🔵 Students</strong></div>
+      <div style="color: #e74c3c"><strong>🔴 Teachers</strong></div>
+    </div>
+
+    <div id="sidebar">
+      <h3>Studios</h3>
+      <ul id="zoneStudentList"></ul>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="/js/studentData.js"></script>
+    <script src="/js/studioData.js"></script>
+    <script src="/js/TeachersData.js"></script>
+
+    <script>
+      const map = L.map("map").setView([22.9734, 78.6569], 5);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+      }).addTo(map);
+
+      const greenIcon = new L.Icon({
+        iconUrl:
+          "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
+        shadowUrl:
+          "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+      });
+
+      const redIcon = new L.Icon({
+        iconUrl:
+          "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+        shadowUrl:
+          "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+      });
+
+      const blueIcon = new L.Icon.Default();
+      const studentCluster = L.markerClusterGroup({
+        iconCreateFunction: function (cluster) {
+          return L.divIcon({
+            html: `
+        <div style="
+          background: radial-gradient(circle at center, #3498db, #2980b9);
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: white;
+          opacity: 0.9;
+          transition: transform 0.3s ease;
+        " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          ${cluster.getChildCount()}
+        </div>
+      `,
+            className: "custom-student-cluster",
+            iconSize: [40, 40],
+          });
+        },
+      });
+
+      const teacherCluster = L.markerClusterGroup({
+        iconCreateFunction: function (cluster) {
+          return L.divIcon({
+            html: `
+              <div style="
+                background: radial-gradient(circle at center, #e74c3c, #c0392b);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                box-shadow: 0 0 10px rgba(231, 76, 60, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                color: white;
+                opacity: 0.9;
+                transition: transform 0.3s ease;
+              " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                ${cluster.getChildCount()}
+              </div>
+            `,
+            className: "custom-teacher-cluster",
+            iconSize: [40, 40],
+          });
+        },
+      });
+
+      let allStudentMarkers = [];
+      const studioMarkers = [];
+      const studioZones = [];
+      let showZones = true;
+      let routeLine = null;
+      let distanceLabel = null;
+
+      function haversine(lat1, lon1, lat2, lon2) {
+        const R = 6371;
+        const dLat = ((lat2 - lat1) * Math.PI) / 180;
+        const dLon = ((lon2 - lon1) * Math.PI) / 180;
+        const a =
+          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos((lat1 * Math.PI) / 180) *
+            Math.cos((lat2 * Math.PI) / 180) *
+            Math.sin(dLon / 2) *
+            Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+      }
+
+      function drawRoute(studentLatLng, studioLatLng, distanceKm) {
+        if (routeLine) map.removeLayer(routeLine);
+        if (distanceLabel) map.removeLayer(distanceLabel);
+
+        routeLine = L.polyline([studentLatLng, studioLatLng], {
+          color: "red",
+          weight: 3,
+          opacity: 0.7,
+          dashArray: "5,10",
+        }).addTo(map);
+
+        distanceLabel = L.marker(routeLine.getCenter(), {
+          icon: L.divIcon({
+            className: "distance-label",
+            html: `${distanceKm.toFixed(2)} km`,
+          }),
+        }).addTo(map);
+
+        map.fitBounds(routeLine.getBounds(), { padding: [30, 30] });
+
+        setTimeout(() => {
+          if (routeLine) map.removeLayer(routeLine);
+          if (distanceLabel) map.removeLayer(distanceLabel);
+          routeLine = null;
+          distanceLabel = null;
+        }, 4000);
+      }
+
+      studioLocations.forEach((studio, index) => {
+        if (studio.lat && studio.lng) {
+          const purpleIcon = new L.Icon({
+            iconUrl:
+              "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png",
+            shadowUrl:
+              "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41],
+          });
+
+          const marker = L.marker([studio.lat, studio.lng], {
+            icon: purpleIcon,
+          }).bindPopup(`<strong>${studio.name}</strong><br>${studio.address}`);
+          map.addLayer(marker);
+          studio.markerRef = marker;
+          studioMarkers.push(marker);
+
+          const zone = L.circle([studio.lat, studio.lng], {
+            radius: 5000,
+            color: "#8e44ad",
+            fillColor: "#d2b4de",
+            fillOpacity: 0.3,
+          }).addTo(map);
+          studioZones.push(zone);
+        }
+      });
+
+      document
+        .getElementById("toggleZonesBtn")
+        .addEventListener("click", () => {
+          showZones = !showZones;
+          updateStudioMarkers(document.getElementById("hobbyFilter").value);
+          document.getElementById("toggleZonesBtn").innerText = showZones
+            ? "Hide Studio Zones"
+            : "Show Studio Zones";
+        });
+
+      function updateStudioMarkers(selectedHobby) {
+        studioMarkers.forEach((marker, index) => {
+          const studio = studioLocations[index];
+          const match =
+            selectedHobby === "all" ||
+            studio.keywords?.some((k) =>
+              selectedHobby.toLowerCase().includes(k.toLowerCase())
+            );
+          if (match) {
+            map.addLayer(marker);
+            if (showZones) studioZones[index].addTo(map);
+            else map.removeLayer(studioZones[index]);
+          } else {
+            map.removeLayer(marker);
+            map.removeLayer(studioZones[index]);
+          }
+        });
+      }
+
+      studentLocations.forEach((student) => {
+        if (student.lat && student.lng) {
+          let matchedStudio = null;
+          for (const studio of studioLocations) {
+            if (studio.lat && studio.lng) {
+              const dist = haversine(
+                student.lat,
+                student.lng,
+                studio.lat,
+                studio.lng
+              );
+              if (dist <= 5) {
+                const matched = studio.keywords?.some((keyword) =>
+                  student.hobby.toLowerCase().includes(keyword.toLowerCase())
+                );
+                if (matched) {
+                  matchedStudio = studio;
+                  break;
+                }
+              }
+            }
+          }
+
+          const icon = matchedStudio ? greenIcon : blueIcon;
+          const marker = L.marker([student.lat, student.lng], {
+            icon,
+          }).bindPopup(
+            `<strong>${student.name}</strong><br>
+                   Hobby: ${student.hobby}<br>
+                   Address: ${student.address}` +
+              (matchedStudio
+                ? `<br><em>Matched with ${matchedStudio.name}</em>`
+                : `<br><button onclick="findNearestStudio(${student.lat}, ${
+                    student.lng
+                  }, '${student.hobby.replace(
+                    /'/g,
+                    ""
+                  )}')">Find Closest Studio</button>`)
+          );
+
+          marker.hobby = student.hobby;
+          marker.insideStudioZone = !!matchedStudio;
+          marker.nearestStudio = matchedStudio?.name || null;
+          marker.lat = student.lat;
+          marker.lng = student.lng;
+
+          studentCluster.addLayer(marker);
+          allStudentMarkers.push(marker);
+        }
+      });
+
+      map.addLayer(studentCluster);
+
+      // ADD TEACHER MARKERS
+      teacherLocations.forEach((teacher) => {
+        if (teacher.lat && teacher.lng) {
+          const redIcon = new L.Icon({
+            iconUrl:
+              "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+            shadowUrl:
+              "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41],
+          });
+
+          const teacherMarker = L.marker([teacher.lat, teacher.lng], {
+            icon: redIcon,
+          }).bindPopup(
+            `<strong>${teacher.name}</strong><br>
+               Address: ${teacher.address}`
+          );
+          teacherMarker.setLatLng([
+            teacher.lat + 0.002, // Slightly shift to avoid overlap with student clusters
+            teacher.lng + 0.002,
+          ]);
+          teacherCluster.addLayer(teacherMarker);
+        }
+      });
+
+      map.addLayer(teacherCluster);
+
+      const hobbySet = new Set(studentLocations.map((s) => s.hobby));
+      const hobbyFilter = document.getElementById("hobbyFilter");
+      hobbySet.forEach((hobby) => {
+        const option = document.createElement("option");
+        option.value = hobby;
+        option.textContent = hobby;
+        hobbyFilter.appendChild(option);
+      });
+
+      hobbyFilter.addEventListener("change", (e) => {
+        const selectedHobby = e.target.value;
+        studentCluster.clearLayers();
+        const filtered =
+          selectedHobby === "all"
+            ? allStudentMarkers
+            : allStudentMarkers.filter((m) => m.hobby === selectedHobby);
+        filtered.forEach((m) => studentCluster.addLayer(m));
+        updateSidebar(selectedHobby);
+        updateStudioMarkers(selectedHobby);
+      });
+
+      function findNearestStudio(lat, lng, hobby) {
+        let minDist = Infinity;
+        let nearest = null;
+        for (const studio of studioLocations) {
+          if (studio.lat && studio.lng) {
+            const keywordMatch = studio.keywords?.some((k) =>
+              hobby.toLowerCase().includes(k.toLowerCase())
+            );
+            if (!keywordMatch) continue;
+            const dist = haversine(lat, lng, studio.lat, studio.lng);
+            if (dist < minDist) {
+              minDist = dist;
+              nearest = studio;
+            }
+          }
+        }
+        if (nearest) {
+          const studentLatLng = L.latLng(lat, lng);
+          const studioLatLng = L.latLng(nearest.lat, nearest.lng);
+          const dist = haversine(lat, lng, nearest.lat, nearest.lng);
+          drawRoute(studentLatLng, studioLatLng, dist);
+        }
+      }
+
+      function updateSidebar(selectedHobby = "all") {
+        const listEl = document.getElementById("zoneStudentList");
+        listEl.innerHTML = "";
+        studioLocations.forEach((studio, index) => {
+          const matchedMarkers = allStudentMarkers.filter(
+            (marker) =>
+              marker.insideStudioZone &&
+              marker.nearestStudio === studio.name &&
+              (selectedHobby === "all" || marker.hobby === selectedHobby)
+          );
+
+          if (
+            selectedHobby !== "all" &&
+            !studio.keywords?.some((k) =>
+              selectedHobby.toLowerCase().includes(k.toLowerCase())
+            )
+          )
+            return;
+
+          const header = document.createElement("li");
+          header.className = "studio-title";
+          header.textContent = `${studio.name} (${matchedMarkers.length})`;
+          header.addEventListener("click", () => {
+            map.setView([studio.lat, studio.lng], 13);
+          });
+          listEl.appendChild(header);
+
+          matchedMarkers.forEach((marker) => {
+            const li = document.createElement("li");
+            li.className = "student-name";
+            const name = marker
+              .getPopup()
+              .getContent()
+              .split("<br>")[0]
+              .replace(/<[^>]+>/g, "");
+            li.textContent = `↳ ${name}`;
+            li.addEventListener("click", () => {
+              map.setView(marker.getLatLng(), 13);
+              marker.openPopup();
+            });
+            listEl.appendChild(li);
+          });
+        });
+      }
+
+      updateSidebar();
+      updateStudioMarkers("all");
+    </script>
+  </body>
+</html>
