@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add New Teacher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f3f3;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      color: #c0392b;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #e74c3c;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c0392b;
+    }
+    .success, .error {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <%- include("partials/navbar", { page: 'teacher' }) %>
+
+  <div class="form-section">
+  <div class="form-container">
+    <h2>Add New Teacher</h2>
+    <div id="statusMessage"></div>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="price">Price</label>
+    <input type="text" id="price" placeholder="e.g., Rs 500/session">
+
+    <label for="hobby">Hobbies (comma separated)</label>
+    <input type="text" id="hobby" placeholder="e.g., Guitar, Art and Craft" required>
+
+    <label for="address">Address</label>
+    <input type="text" id="address" required>
+
+    <label for="location">Location (City)</label>
+    <input type="text" id="location" required>
+
+    <label for="lat">Latitude</label>
+    <input type="number" id="lat" step="any" required>
+
+    <label for="lng">Longitude</label>
+    <input type="number" id="lng" step="any" required>
+
+    <button onclick="submitTeacher()">Add Teacher</button>
+  </div>
+  </div>
+
+  <script>
+    async function submitTeacher() {
+      const data = {
+        name: document.getElementById("name").value.trim(),
+        price: document.getElementById("price").value.trim(),
+        hobby: document.getElementById("hobby").value.split(",").map(h => h.trim()),
+        address: document.getElementById("address").value.trim(),
+        location: document.getElementById("location").value.trim(),
+        lat: parseFloat(document.getElementById("lat").value),
+        lng: parseFloat(document.getElementById("lng").value),
+      };
+
+      const status = document.getElementById("statusMessage");
+
+      if (!data.name || !data.hobby.length || !data.address || !data.location || isNaN(data.lat) || isNaN(data.lng)) {
+        status.className = "error";
+        status.textContent = "❌ Please fill all fields correctly.";
+        return;
+      }
+
+      const res = await fetch("/addTeacher", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.text();
+
+      if (res.ok) {
+        status.className = "success";
+        status.textContent = result;
+      } else {
+        status.className = "error";
+        status.textContent = "❌ Failed to add teacher: " + result;
+      }
+    }
+  </script>
+</body>
+</html>

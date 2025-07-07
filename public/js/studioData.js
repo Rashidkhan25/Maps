@@ -1,4 +1,4 @@
-const studioLocations = [
+let studioLocations = [
   {
     "name": "LordZway Music Store & Academy",
     "phone": "9820929205",
@@ -159,5 +159,5 @@ const studioLocations = [
     "lat": 18.594476, 
     "lng": 73.757157,
     "keywords": ["Football"]
-  }
+  },
 ];

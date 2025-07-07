@@ -1,4 +1,4 @@
-const teacherLocations = [
+  let teacherLocations = [
   {
     "name": "aditya pevekar",
     "price": "",

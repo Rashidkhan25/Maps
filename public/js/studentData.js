@@ -1,4 +1,4 @@
-const studentLocations = [
+let studentLocations = [
   {
     "name": "Yash Gupta",
     "email": "umeshgupta141@gmail.com",

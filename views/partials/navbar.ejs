@@ -1,0 +1,36 @@
+<style>
+  .navbar {
+    background-color: #8e44ad;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15.5px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #732d91;
+    color: #f1f1f1;
+  }
+
+  .navbar a.active {
+    background-color: #5e2c82;
+    color: #fff;
+  }
+</style>
+
+<div class="navbar">
+  <a href="/admin" class="<%= (page === 'student') ? 'active' : '' %>">➕ Add Student</a>
+  <a href="/admin/studio" class="<%= (page === 'studio') ? 'active' : '' %>">🏢 Add Studio</a>
+  <a href="/admin/teacher" class="<%= (page === 'teacher') ? 'active' : '' %>">👨‍🏫 Add Teacher</a>
+  <a href="/" class="<%= (page === 'map') ? 'active' : '' %>">📍 Go to Map</a>
+</div>
