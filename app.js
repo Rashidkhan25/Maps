@@ -2,31 +2,66 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
-const fs = require("fs");
+const mongoose = require('mongoose');
+const Student = require('./models/Student');
+const Studio = require('./models/Studio');
+const Teacher = require('./models/Teacher');
 
+require('dotenv').config();
+
+// ✅ Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI)
+.then(() => console.log("MongoDB connected"))
+.catch(err => console.error("MongoDB connection error:", err));
+
+// Express config
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json()); 
+app.use(express.json());
 
 // Routes for pages
 app.get("/", (req, res) => res.render("index"));
+app.get("/admin", (req, res) => res.render("addStudent"));
+app.get("/admin/studio", (req, res) => res.render("addStudio"));
+app.get("/admin/teacher", (req, res) => res.render("addTeacher"));
 
-app.get("/admin", (req, res) => {
-  res.render("addStudent");
+
+// Add these routes to serve your data as JSON
+app.get("/api/students", async (req, res) => {
+  try {
+    const students = await Student.find({});
+    res.json(students);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch students" });
+  }
 });
 
-app.get("/admin/studio", (req, res) => {
-  res.render("addStudio");
+app.get("/api/studios", async (req, res) => {
+  try {
+    const studios = await Studio.find({});
+    res.json(studios);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch studios" });
+  }
 });
 
-app.get("/admin/teacher", (req, res) => {
-  res.render("addTeacher");
+app.get("/api/teachers", async (req, res) => {
+  try {
+    const teachers = await Teacher.find({});
+    res.json(teachers);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch teachers" });
+  }
 });
 
-app.post("/addStudent", (req, res) => {
+
+// student logic
+app.post("/addStudent", async (req, res) => {
   const newStudent = req.body;
+  newStudent.lat = parseFloat(newStudent.lat);
+  newStudent.lng = parseFloat(newStudent.lng);
 
   if (
     !newStudent.name ||
@@ -34,56 +69,24 @@ app.post("/addStudent", (req, res) => {
     !newStudent.phone ||
     !newStudent.hobby ||
     !newStudent.address ||
-    typeof newStudent.lat !== "number" ||
-    typeof newStudent.lng !== "number"
+    isNaN(newStudent.lat) ||
+    isNaN(newStudent.lng)
   ) {
     return res.status(400).send("Invalid student data.");
   }
 
-  const filePath = path.join(__dirname, "public/js/studentData.js");
-
-  fs.readFile(filePath, "utf-8", (err, content) => {
-    if (err) {
-      console.error("Error reading studentData.js:", err);
-      return res.status(500).send("Error reading student data.");
-    }
-
-    try {
-      const pattern = /studentLocations\s*=\s*\[(.*)\];/s;
-      const match = content.match(pattern);
-
-      if (!match) {
-        return res.status(500).send("studentLocations array not found.");
-      }
-
-      const currentData = match[1].trim();
-      const updatedData =
-        currentData.length > 0
-          ? currentData + ",\n  " + JSON.stringify(newStudent, null, 2)
-          : JSON.stringify(newStudent, null, 2);
-
-      const newContent = content.replace(
-        pattern,
-        `studentLocations = [\n  ${updatedData}\n];`
-      );
-
-      fs.writeFile(filePath, newContent, "utf-8", (err) => {
-        if (err) {
-          console.error("Error writing to studentData.js:", err);
-          return res.status(500).send("Error saving student.");
-        }
-
-        res.send("✅ Student added successfully!");
-      });
-    } catch (e) {
-      console.error("Parsing error:", e);
-      res.status(500).send("Server error while processing data.");
-    }
-  });
+  try {
+    const student = new Student(newStudent);
+    await student.save();
+    res.send("✅ Student added successfully and saved to MongoDB!");
+  } catch (err) {
+    console.error("MongoDB save error:", err);
+    res.status(500).send("Error saving student to database.");
+  }
 });
 
-// Handle studio submission
-app.post("/addStudio", (req, res) => {
+// 📌 Studio logic 
+app.post("/addStudio", async (req, res) => {
   const newStudio = req.body;
 
   if (
@@ -99,87 +102,56 @@ app.post("/addStudio", (req, res) => {
     return res.status(400).send("Invalid studio data.");
   }
 
-  const studioFile = path.join(__dirname, "public/js/studioData.js");
+  try {
+    const studio = new Studio(newStudio);
+    await studio.save();
+    res.send("✅ Studio added successfully and saved to MongoDB!");
+  } catch (err) {
+    console.error("MongoDB save error (studio):", err);
+    res.status(500).send("Error saving studio to database.");
+  }
+});
 
-  fs.readFile(studioFile, "utf-8", (err, content) => {
-    if (err) {
-      console.error("Error reading studioData.js:", err);
-      return res.status(500).send("Error reading studio data.");
+// 📌 Teacher logic 
+app.post("/addTeacher", async (req, res) => {
+  try {
+    const teacherData = req.body;
+    if (typeof teacherData.hobby === "string") {
+      try {
+        const parsed = JSON.parse(teacherData.hobby);
+        if (Array.isArray(parsed)) {
+          teacherData.hobby = parsed;
+        } else {
+          return res.status(400).send("❌ Hobby must be an array.");
+        }
+      } catch (e) {
+        return res.status(400).send("❌ Invalid hobby format.");
+      }
     }
 
-    const pattern = /studioLocations\s*=\s*\[(.*)\];/s;
-    const match = content.match(pattern);
-
-    if (!match) return res.status(500).send("studioLocations array not found.");
-
-    const currentData = match[1].trim();
-    const updatedData =
-      currentData.length > 0
-        ? currentData + ",\n  " + JSON.stringify(newStudio, null, 2)
-        : JSON.stringify(newStudio, null, 2);
-
-    const newContent = content.replace(
-      pattern,
-      `studioLocations = [\n  ${updatedData}\n];`
-    );
-
-    fs.writeFile(studioFile, newContent, "utf-8", (err) => {
-      if (err) {
-        console.error("Error writing to studioData.js:", err);
-        return res.status(500).send("Error saving studio.");
+    const requiredFields = ["name", "address", "location", "lat", "lng"];
+    for (const field of requiredFields) {
+      if (!teacherData[field]) {
+        return res.status(400).send(`❌ Missing required field: ${field}`);
       }
+    }
 
-      res.send("✅ Studio added successfully!");
-    });
-  });
-});
+    const teacher = new Teacher(teacherData);
+    await teacher.save();
 
-// POST route to save teacher data
-app.post("/addTeacher", (req, res) => {
-  const newTeacher = req.body;
-
-  if (
-    !newTeacher.name ||
-    !Array.isArray(newTeacher.hobby) ||
-    !newTeacher.address ||
-    !newTeacher.location ||
-    typeof newTeacher.lat !== "number" ||
-    typeof newTeacher.lng !== "number"
-  ) {
-    return res.status(400).send("Invalid teacher data.");
+    res.send("✅ Teacher saved successfully to MongoDB!");
+  } catch (err) {
+    console.error("🔥 Error saving teacher:", err);
+    res.status(500).send("❌ Server error while saving teacher.");
   }
-
-  const teacherFile = path.join(__dirname, "public/js/TeachersData.js");
-
-  fs.readFile(teacherFile, "utf-8", (err, content) => {
-    if (err) return res.status(500).send("Error reading teacherData.js");
-
-    const match = content.match(/teacherLocations\s*=\s*\[(.*)\];/s);
-    if (!match) return res.status(500).send("teacherLocations array not found.");
-
-    const currentData = match[1].trim();
-    const updatedData =
-      currentData.length > 0
-        ? currentData + ",\n  " + JSON.stringify(newTeacher, null, 2)
-        : JSON.stringify(newTeacher, null, 2);
-
-    const newContent = content.replace(
-      /teacherLocations\s*=\s*\[.*\];/s,
-      `teacherLocations = [\n  ${updatedData}\n];`
-    );
-
-    fs.writeFile(teacherFile, newContent, "utf-8", (err) => {
-      if (err) return res.status(500).send("Error saving teacher.");
-      res.send("✅ Teacher added successfully!");
-    });
-  });
 });
 
-
+// 404 handler
 app.use((req, res, next) => {
   res.status(404).render("404");
 });
 
+// Server
 const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

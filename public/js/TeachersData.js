@@ -170,15 +170,15 @@
     "lat": 22.8817,
     "lng": 74.0052
   },
-  // {
-  //   "name": "Gloria Martis",
-  //   "price": "2500",
-  //   "hobby": "[\"Public Speaking\",\"Western Vocals\",\"Hindustani Vocals\",\"Host\",\"Creative Writing\",\"English\",\"Marathi\"]",
-  //   "address": "B-404, Jalaram Jyot, Highland Complex, Charkop Village Kandivali West, Mumbai 400067",
-  //   "location": "Mumbai",
-  //   "lat": 19.07283,
-  //   "lng": 72.88261
-  // },
+  {
+    "name": "Gloria Martis",
+    "price": "2500",
+    "hobby": "[\"Public Speaking\",\"Western Vocals\",\"Hindustani Vocals\",\"Host\",\"Creative Writing\",\"English\",\"Marathi\"]",
+    "address": "B-404, Jalaram Jyot, Highland Complex, Charkop Village Kandivali West, Mumbai 400067",
+    "location": "Mumbai",
+    "lat": 19.07283,
+    "lng": 72.88261
+  },
   {
     "name": "Gwendoline Dias",
     "price": "500",
@@ -197,15 +197,15 @@
     "lat": 19.284758,
     "lng": 72.875395
   },
-  // {
-  //   "name": "Jason  Menezes ",
-  //   "price": "2500",
-  //   "hobby": "[\"Public Speaking\",\"English\"]",
-  //   "address": "B/404 Ambika apartments, mahakali caves road, Andheri East",
-  //   "location": "Andheri East ",
-  //   "lat": 19.11446,
-  //   "lng": 72.8712
-  // },
+  {
+    "name": "Jason  Menezes ",
+    "price": "2500",
+    "hobby": "[\"Public Speaking\",\"English\"]",
+    "address": "B/404 Ambika apartments, mahakali caves road, Andheri East",
+    "location": "Andheri East ",
+    "lat": 19.11446,
+    "lng": 72.8712
+  },
   {
     "name": "Jessica Dsouza",
     "price": "850",
@@ -239,8 +239,8 @@
     "hobby": "[\"Drama\"]",
     "address": "Kanungo Apartments, 71 I.P Extension, Patparganj, Delhi 110092",
     "location": "New Delhi",
-    "lat": 29.7732,
-    "lng": 77.1966
+    "lat": 28.631323,
+    "lng": 77.307131
   },
   {
     "name": "Madhavan Rao",
@@ -248,8 +248,8 @@
     "hobby": "[\"Drama\",\"Martial Art\",\"Dance\"]",
     "address": "Flat-16, A1 building, SV Nagar, Hadapsar, Pune 411013",
     "location": "Pune",
-    "lat": 18.51957,
-    "lng": 73.85535
+    "lat": 18.506940,
+    "lng": 73.926310
   },
   {
     "name": "Mahima Shah",
@@ -257,8 +257,8 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "S/2, ANAND PRAKASH APPT, NR BOB OPP PARIJAT SOCIETY, FATEHPURA, PALDI, AHMEDABAD",
     "location": "Ahmedabad, Gujarat",
-    "lat": 23.008988,
-    "lng": 72.558544
+    "lat": 23.004489, 
+    "lng": 72.560251
   },
   {
     "name": "Mala Suraya Faust",
@@ -266,8 +266,8 @@
     "hobby": "[\"Violin\"]",
     "address": "Building 5, Kapaswadi, Andheri west, Mumbai",
     "location": "Mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.119262,
+    "lng": 72.827247
   },
   {
     "name": "Mamta Sanghavi",
@@ -275,7 +275,7 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "103 SVL Heights, Masab Tank, Lane opposite police officer mess",
     "location": "Hyderabad",
-    "lat": 17.38405,
+    "lat": 17.404109,
     "lng": 78.45636
   },
   {
@@ -293,8 +293,8 @@
     "hobby": "[\"Guitar\"]",
     "address": "102 Narmada jangid complex mira road east",
     "location": "Mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.279603,
+    "lng": 72.873649
   },
   {
     "name": "Martin Tirumala",
@@ -320,8 +320,8 @@
     "hobby": "[\"Resin Art\",\"Art and Craft\",\"Calligraphy\",\"Sketching & Drawing\"]",
     "address": "A703, Giriraj, Plt no 109, Rd No 1, Jawahar Nagar, Goregaon West ",
     "location": "Mumbai",
-    "lat": 27.42397,
-    "lng": 77.09922
+    "lat": 19.160934,
+    "lng": 72.848771
   },
   {
     "name": "Ms. Masum Ahmed",
@@ -338,8 +338,8 @@
     "hobby": "[\"Vedic Maths\"]",
     "address": "Teetardi Gupteswarji Road",
     "location": "Rajasthan ",
-    "lat": 26.58333,
-    "lng": 73.83333
+    "lat": 24.534962,
+    "lng": 73.718551
   },
   {
     "name": "Nishant Kumar",
@@ -356,8 +356,8 @@
     "hobby": "[\"Hindustani Vocals\"]",
     "address": "196/B, Girgaon, Gaiwadi, Mumbai 400004",
     "location": "Mumbai ",
-    "lat": 18.95,
-    "lng": 72.8167
+    "lat": 18.953984, 
+    "lng": 72.820794
   },
   {
     "name": "Om mestry",
@@ -365,8 +365,8 @@
     "hobby": "[\"Sketching & Drawing\",\"Graphics Art\"]",
     "address": "301 chaitanya krishnai ,liberty garden , malad west mumbai 64",
     "location": "Mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.184697,
+    "lng": 72.842883
   },
   {
     "name": "Prachi Vashisth",
@@ -374,8 +374,8 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "A-72 Jiwan Park. New Delhi, 110059. ",
     "location": "Delhi",
-    "lat": 28.3256,
-    "lng": 76.5918
+    "lat": 28.616844,
+    "lng": 77.071873
   },
   {
     "name": "Pratham Maheshwari",
@@ -401,8 +401,8 @@
     "hobby": "[\"Guitar\",\"Hindustani Vocals\"]",
     "address": "402, shree siddhinath chs, model town, versova",
     "location": "mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.133361,
+    "lng": 72.821198
   },
   {
     "name": "Ragini jalkhare",
@@ -410,8 +410,8 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "51, station road Shajapur ",
     "location": "Indore/Shajapur ",
-    "lat": 23.42688,
-    "lng": 76.27772
+    "lat": 22.635379, 
+    "lng": 75.807108
   },
   {
     "name": "Rakshita Dwivedi ",
@@ -419,8 +419,8 @@
     "hobby": "[\"Culinary\",\"Baking\"]",
     "address": "17095, Prestige Shantiniketan,  ITPL road,  Bangalore ",
     "location": "Bangalore ",
-    "lat": 12.97194,
-    "lng": 77.59369
+    "lat": 12.988787,
+    "lng": 77.728794
   },
   {
     "name": "RHYS VAZ",
@@ -428,8 +428,8 @@
     "hobby": "[\"Self Defence\"]",
     "address": "101 SILVER SUNSHINE 9TH ROAD KHAR WEST MUMBAI 400052",
     "location": "MUMBAI",
-    "lat": 18.7997,
-    "lng": 72.926
+    "lat": 19.073644, 
+    "lng": 72.838855
   },
   {
     "name": "Roshini Hiro Dhansingani ",
@@ -437,8 +437,8 @@
     "hobby": "[\"Spanish\",\"English\"]",
     "address": "Kumar Platinum, flat no 603, Synagogue street , 411001 Pune , India ",
     "location": "Pune ",
-    "lat": 18.5196,
-    "lng": 73.8554
+    "lat": 18.519095,
+    "lng": 73.873915
   },
   {
     "name": "SAAKSHI AMIT PATEL",
@@ -464,8 +464,8 @@
     "hobby": "[\"Art and Craft\",\"Calligraphy\",\"Photography\"]",
     "address": "409 ROOM NO 5 KADRI MANSION VEER SAVARKAR MARG PRABHADEVI MUMBAI 400025",
     "location": "Mumbai",
-    "lat": 19.0164,
-    "lng": 72.8294
+    "lat": 19.015734,
+    "lng": 72.828961
   },
   {
     "name": "SASI KUMAR M",
@@ -491,8 +491,8 @@
     "hobby": "[\"Poetry Writing\",\"Art and Craft\",\"Public Speaking\",\"DIY Crafting\"]",
     "address": "Sri Karthikeya luxury pg for ladies, Domlur stage 2, Bengaluru.",
     "location": "Bengaluru ",
-    "lat": 12.97194,
-    "lng": 77.59369
+    "lat": 12.958363,
+    "lng": 77.640242
   },
   {
     "name": "Shalveeta Pereira",
@@ -509,8 +509,8 @@
     "hobby": "[\"Drums\"]",
     "address": "Room no 1375, Building no 25, MHB colony, khernagar, Bandra east. Mumbai 400051",
     "location": "Mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.059911,
+    "lng": 72.843052
   },
   {
     "name": "Shivam Shakya",
@@ -527,8 +527,8 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "401, C wing, casa milano, palava city, khoni, dombivli ",
     "location": "Dombivli,Navi Mumbai ",
-    "lat": 19.03681,
-    "lng": 73.01582
+    "lat": 19.155038,
+    "lng": 73.113898
   },
   {
     "name": "Shriya Ganapathy",
@@ -536,8 +536,8 @@
     "hobby": "[\"Western Vocals\",\"Keyboard\"]",
     "address": "604, Daze Apartments, Chincholi Phatak, Pavan Baug Road, Malad West, Mumbai, Maharashtra - 400064",
     "location": "Malad, Mumbai",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.177369,
+    "lng": 72.846967
   },
   {
     "name": "Shubhendu Dwivedi",
@@ -545,8 +545,8 @@
     "hobby": "[\"Dance\"]",
     "address": "Club Danube, Casa Rio, Palava City, Dombivli East, Navi Mumbai, Maharashtra 421204",
     "location": "Dombivli, Mumbai",
-    "lat": 19.03681,
-    "lng": 73.01582
+    "lat": 19.148083,
+    "lng": 73.078375
   },
   {
     "name": "Sonia Menezes",
@@ -572,8 +572,8 @@
     "hobby": "[\"Crochet & Knitting\"]",
     "address": "301 Ave Maria Apartments, 25 Viviani Road Richards Town ",
     "location": "Bangalore ",
-    "lat": 13.0039824,
-    "lng": 77.6153583
+    "lat": 13.003888, 
+    "lng": 77.615308
   },
   {
     "name": "Tanmay Sawant ",
@@ -590,8 +590,8 @@
     "hobby": "[\"Art and Craft\",\"Public Speaking\",\"Sketching & Drawing\"]",
     "address": "FF-2, A-17, Nehwal Homes, Mahendra Enclave, Near Kush Department Store, Shastri Nagar, Ghaziabad, Uttar Pradesh",
     "location": "Ghaziabad, Uttar Pradesh",
-    "lat": 28.669992,
-    "lng": 77.453758
+    "lat": 28.666713, 
+    "lng": 77.467077
   },
   {
     "name": "Titus Christian",
@@ -644,8 +644,8 @@
     "hobby": "[\"Art and Craft\"]",
     "address": "A-403Grit Paradise.G.M. link Rd.Next to Shankara colony. Mumbai-43",
     "location": "Mumbai Chembur",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.063055,
+    "lng": 72.911974
   },
   {
     "name": "Vidhi Ganesh Oswal",
@@ -653,8 +653,8 @@
     "hobby": "[\"Art and Craft\",\"German\",\"Sketching & Drawing\"]",
     "address": "Shri shantinagar housing society, Kondhwa bk.",
     "location": "Maharashtra ",
-    "lat": 19.5,
-    "lng": 76
+    "lat": 18.459539,
+    "lng": 73.877935
   },
   {
     "name": "Vishwesh Pandey",
@@ -671,7 +671,9 @@
     "hobby": "[\"Coding\"]",
     "address": "B1,Honeycomb Apt. , Kovilmaniyam",
     "location": "Chennai",
-    "lat": 13.08784,
-    "lng": 80.27847
+    "lat": 12.789582,
+    "lng": 80.209881
   }
 ];
+
+export default teacherLocations;

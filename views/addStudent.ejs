@@ -80,6 +80,7 @@
   <%- include("partials/navbar", { page: 'student' }) %> 
 <div class="form-section">
   <div class="form-container">
+    <form id="studentForm" onsubmit="submitForm(); return false">
     <h2>Add New Student</h2>
     <div id="statusMessage" class=""></div>
 
@@ -104,7 +105,8 @@
     <label for="lng">Longitude:</label>
     <input type="number" id="lng" placeholder="e.g., 72.9781" step="any" required>
 
-    <button onclick="submitForm()">Add Student</button>
+    <button type="submit">Add Student</button>
+    </form>
   </div>
 </div>
 

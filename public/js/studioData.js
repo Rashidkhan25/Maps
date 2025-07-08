@@ -116,8 +116,8 @@ let studioLocations = [
     "price": "",
     "batch": "11-10pm m-f 600/session \nM-f =4500\n3 = 3500\n2 = 2500\n1 = 2000\nprivate - 800/session",
     "address": "",
-    "lat": null,
-    "lng": null,
+    "lat": 19.162518, 
+    "lng": 73.075118,
     "keywords": ["Guitar", "Keyboard"]
   },
   {
@@ -161,3 +161,5 @@ let studioLocations = [
     "keywords": ["Football"]
   },
 ];
+
+export default studioLocations;

@@ -5,8 +5,8 @@ let studentLocations = [
     "phone": "9990106268",
     "hobby": "Guitar Music Class",
     "address": "3003, Estrella - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037412,
+    "lng":  72.877651
   },
   {
     "name": "Yash Gupta",
@@ -14,8 +14,8 @@ let studentLocations = [
     "phone": "9990106268",
     "hobby": "Singing Class",
     "address": "3003, Estrella - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037412,
+    "lng":  72.877651
   },
   {
     "name": "Yash Gupta",
@@ -23,8 +23,8 @@ let studentLocations = [
     "phone": "9104126268",
     "hobby": "Guitar Music Class",
     "address": "A 3003, Lodha NCP Estrella, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037412,
+    "lng":  72.877651
   },
   {
     "name": "Shilpa Bodke",
@@ -32,8 +32,8 @@ let studentLocations = [
     "phone": "9619137452",
     "hobby": "Bollywood Dance Class",
     "address": "706, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Shilpa Bodke",
@@ -41,8 +41,8 @@ let studentLocations = [
     "phone": "9619137452",
     "hobby": "Contemporary Dance Class",
     "address": "706, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Shilpa Bodke",
@@ -50,8 +50,8 @@ let studentLocations = [
     "phone": "9619137452",
     "hobby": "Bharatnatyam Dance Class",
     "address": "706, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+     "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Nesae Farhadi",
@@ -59,8 +59,8 @@ let studentLocations = [
     "phone": "6309286547",
     "hobby": "Kathak Dance Class",
     "address": "A-4102, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502, 
+    "lng": 72.829588
   },
   {
     "name": "Ganesh Pandit",
@@ -68,8 +68,8 @@ let studentLocations = [
     "phone": "7249879672",
     "hobby": "Bollywood Dance Class",
     "address": "B-1301, Parkside Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003910,
+    "lng": 72.828909
   },
   {
     "name": "Shital Mehta",
@@ -77,8 +77,8 @@ let studentLocations = [
     "phone": "9821036413",
     "hobby": "Cajon Class",
     "address": "1903, Parkside Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+     "lat": 19.003910,
+    "lng": 72.828909
   },
   {
     "name": "Shweta Baig",
@@ -86,8 +86,8 @@ let studentLocations = [
     "phone": "8669046267",
     "hobby": "Bharatnatyam Dance Class",
     "address": "2701 B wing, Lodha Gardenia, New Cuff Parad, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038987,
+    "lng": 72.879527
   },
   {
     "name": "Busra Basci",
@@ -95,8 +95,8 @@ let studentLocations = [
     "phone": "7400161035",
     "hobby": "Contemporary Dance Class",
     "address": "B-3205, Altia - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038514,
+    "lng": 72.877814
   },
   {
     "name": "Kavita Ingawale",
@@ -104,8 +104,8 @@ let studentLocations = [
     "phone": "9834360970",
     "hobby": "Keyboard Music Class",
     "address": "1717, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Richa Balraje",
@@ -113,8 +113,8 @@ let studentLocations = [
     "phone": "7666284901",
     "hobby": "Singing Class",
     "address": "E1-2003, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Richa Balraje",
@@ -122,8 +122,8 @@ let studentLocations = [
     "phone": "7666284901",
     "hobby": "Bollywood Dance Class",
     "address": "E1-2003, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Rajesh Balapure",
@@ -131,8 +131,8 @@ let studentLocations = [
     "phone": "7020584677",
     "hobby": "Guitar Music Class",
     "address": "3, Casa Celeste A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234550,
+    "lng": 72.991771
   },
   {
     "name": "Kavita Ingawale",
@@ -140,8 +140,8 @@ let studentLocations = [
     "phone": "9834360970",
     "hobby": "Bollywood Dance Class",
     "address": "1717, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Shayni Jethwa",
@@ -149,8 +149,8 @@ let studentLocations = [
     "phone": "9930143960",
     "hobby": "Singing Class",
     "address": "503, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Shayni Jethwa",
@@ -158,8 +158,8 @@ let studentLocations = [
     "phone": "9930143960",
     "hobby": "Bollywood Dance Class",
     "address": "503, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Shayni Jethwa",
@@ -167,8 +167,8 @@ let studentLocations = [
     "phone": "9930143960",
     "hobby": "Kathak Dance Class",
     "address": "503, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Vijetha Shetty",
@@ -176,8 +176,8 @@ let studentLocations = [
     "phone": "9867937294",
     "hobby": "Singing Class",
     "address": "605, Casa Sereno, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.233230,
+    "lng": 72.989474
   },
   {
     "name": "Sharon Samson",
@@ -185,8 +185,8 @@ let studentLocations = [
     "phone": "8003697565",
     "hobby": "Guitar Music Class",
     "address": "1706, Casa Greenwood A To E CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.232930,
+    "lng": 72.992297
   },
   {
     "name": "Angha Pawar",
@@ -194,8 +194,8 @@ let studentLocations = [
     "phone": "8669031952",
     "hobby": "Kathak Dance Class",
     "address": "T3-1606, Crown Thane Tower 3, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Bhaskar Kollipara",
@@ -203,8 +203,8 @@ let studentLocations = [
     "phone": "8788541749",
     "hobby": "Keyboard Music Class",
     "address": "102, Crown Thane Tower 4, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Shelley Jindal",
@@ -212,8 +212,8 @@ let studentLocations = [
     "phone": "9969235086",
     "hobby": "Guitar Music Class",
     "address": "B-2903, Lotus Enpar Residency CHSL, Lower Parel, 400013",
-    "lat": 18.9448,
-    "lng": 72.8524
+    "lat": 19.002879,
+    "lng": 72.824910
   },
   {
     "name": "Shelley Jindal",
@@ -221,8 +221,8 @@ let studentLocations = [
     "phone": "9969235086",
     "hobby": "Singing Class",
     "address": "B-2903, Lotus Enpar Residency CHSL, Lower Parel, 400013",
-    "lat": 18.9448,
-    "lng": 72.8524
+    "lat": 19.002879,
+    "lng": 72.824910
   },
   {
     "name": "PRITI MISTRY",
@@ -230,8 +230,8 @@ let studentLocations = [
     "phone": "9769358017",
     "hobby": "Art & Craft Workshop",
     "address": "1902, Lodha Woods Tower 3,4 & 5, Kandivali East, 400101",
-    "lat": null,
-    "lng": null
+    "lat": 19.200814,
+    "lng": 72.877313
   },
   {
     "name": "Dibyajyoti Ghosh",
@@ -239,8 +239,8 @@ let studentLocations = [
     "phone": "8777842861",
     "hobby": "Art & Craft Workshop",
     "address": "3304, Omkar Signet, Malad East, 400097",
-    "lat": null,
-    "lng": null
+    "lat": 19.183695,
+    "lng": 72.859127
   },
   {
     "name": "Pratap Nathani",
@@ -248,8 +248,8 @@ let studentLocations = [
     "phone": "9833026513",
     "hobby": "Art & Craft Workshop",
     "address": "A-6503, Lodha Kiara, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004563,
+    "lng": 72.830025
   },
   {
     "name": "Payal Vairagade",
@@ -266,8 +266,8 @@ let studentLocations = [
     "phone": "9969805901",
     "hobby": "Art & Craft Workshop",
     "address": "K-706, DT Casa Urbano, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.159482,
+    "lng": 73.115268
   },
   {
     "name": "Shilpa Jaiswal",
@@ -275,8 +275,8 @@ let studentLocations = [
     "phone": "8178410560",
     "hobby": "Art & Craft Workshop",
     "address": "422, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Nausheen Mobin",
@@ -284,8 +284,8 @@ let studentLocations = [
     "phone": "7303130056",
     "hobby": "Art & Craft Workshop",
     "address": "I-2003, Casa Tiara, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.234374,
+    "lng": 73.048238
   },
   {
     "name": "Abhishek Gurav",
@@ -293,8 +293,8 @@ let studentLocations = [
     "phone": "9146946135",
     "hobby": "Bollywood Dance Class",
     "address": "1403, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Shival Shah",
@@ -302,8 +302,8 @@ let studentLocations = [
     "phone": "9930922710",
     "hobby": "Keyboard Music Class",
     "address": "1001, Lodha Kiara, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004563,
+    "lng": 72.830025
   },
   {
     "name": "Hina Khan",
@@ -311,8 +311,8 @@ let studentLocations = [
     "phone": "7977746457",
     "hobby": "Art & Craft Workshop",
     "address": "904, Crown Taloja Orchid, Taloja Bypass Phata, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.159902,
+    "lng": 73.118856
   },
   {
     "name": "Kamini Dubey",
@@ -320,8 +320,8 @@ let studentLocations = [
     "phone": "9630732155",
     "hobby": "Bollywood Dance Class",
     "address": "W35-401, Casa Celeste A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234550,
+    "lng": 72.991771
   },
   {
     "name": "Priti Shah",
@@ -338,8 +338,8 @@ let studentLocations = [
     "phone": "9049700907",
     "hobby": "Keyboard Music Class",
     "address": "111, Crown Thane Tower 3, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Siddhant Deshmukh",
@@ -347,8 +347,8 @@ let studentLocations = [
     "phone": "9021917878",
     "hobby": "Keyboard Music Class",
     "address": "27-1107, Sawgrass, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+    "lat": 18.663958,
+    "lng": 73.704742
   },
   {
     "name": "Nupoor Shedbale",
@@ -356,8 +356,8 @@ let studentLocations = [
     "phone": "7620481464",
     "hobby": "Bollywood Dance Class",
     "address": "1622, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Geeta Shingare",
@@ -365,8 +365,8 @@ let studentLocations = [
     "phone": "8425926225",
     "hobby": "Bollywood Dance Class",
     "address": "303, Casa Woodlands, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228413,
+    "lng": 73.048121
   },
   {
     "name": "Sadhana Baranwal",
@@ -374,8 +374,8 @@ let studentLocations = [
     "phone": "9664557743",
     "hobby": "Kathak Dance Class",
     "address": "1211, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Sumeet Baheti",
@@ -383,8 +383,8 @@ let studentLocations = [
     "phone": "9769078973",
     "hobby": "Keyboard Music Class",
     "address": "1801, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Sumeet Baheti",
@@ -392,8 +392,8 @@ let studentLocations = [
     "phone": "9769078973",
     "hobby": "Cajon Class",
     "address": "1801, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Mehvish Ali",
@@ -401,8 +401,8 @@ let studentLocations = [
     "phone": "8088080563",
     "hobby": "Kathak Dance Class",
     "address": "T3-2018, Crown Thane Tower 3, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Dilip Gaware",
@@ -410,8 +410,8 @@ let studentLocations = [
     "phone": "8355956695",
     "hobby": "Guitar Music Class",
     "address": "1102, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Dilip Gaware",
@@ -419,8 +419,8 @@ let studentLocations = [
     "phone": "8355956695",
     "hobby": "Singing Class",
     "address": "1102, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Akash Brahme",
@@ -428,8 +428,8 @@ let studentLocations = [
     "phone": "9657017770",
     "hobby": "Art & Craft Workshop",
     "address": "14-2101, Ashbridge, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+    "lat": 18.661488,
+    "lng": 73.707804
   },
   {
     "name": "Akash Brahme",
@@ -437,8 +437,8 @@ let studentLocations = [
     "phone": "9657017770",
     "hobby": "Bollywood Dance Class",
     "address": "14-2101, Ashbridge, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+    "lat": 18.661488,
+    "lng": 73.707804
   },
   {
     "name": "Akash Brahme",
@@ -446,8 +446,8 @@ let studentLocations = [
     "phone": "9657017770",
     "hobby": "Guitar Music Class",
     "address": "14-2101, Ashbridge, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+   "lat": 18.661488,
+    "lng": 73.707804
   },
   {
     "name": "Smriti Sharma",
@@ -455,8 +455,8 @@ let studentLocations = [
     "phone": "9958479197",
     "hobby": "Bharatnatyam Dance Class",
     "address": "A-2205, Altia - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038514,
+    "lng": 72.877814
   },
   {
     "name": "Sharad Pandey",
@@ -464,8 +464,8 @@ let studentLocations = [
     "phone": "7977995580",
     "hobby": "Bollywood Dance Class",
     "address": "C 1401, Sereno Casha , Mankoli , 421302",
-    "lat": null,
-    "lng": null
+    "lat": 19.230136,
+    "lng": 73.051764
   },
   {
     "name": "Swaroop Dhamake",
@@ -473,8 +473,8 @@ let studentLocations = [
     "phone": "9769071175",
     "hobby": "Keyboard Music Class",
     "address": "1002, LSG Casa Vista, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.169642, 
+    "lng": 73.111814
   },
   {
     "name": "Foram Kothari",
@@ -482,8 +482,8 @@ let studentLocations = [
     "phone": "8450927672",
     "hobby": "Bollywood Dance Class",
     "address": "715, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Rajalakshmi R",
@@ -491,8 +491,8 @@ let studentLocations = [
     "phone": "9869258894",
     "hobby": "Guitar Music Class",
     "address": "1605, RB Casa Estela, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.156674,
+    "lng": 73.113626
   },
   {
     "name": "Rajalakshmi R",
@@ -500,8 +500,8 @@ let studentLocations = [
     "phone": "9869258894",
     "hobby": "Singing Class",
     "address": "1605, RB Casa Estela, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.156674,
+    "lng": 73.113626
   },
   {
     "name": "Anu Dalal",
@@ -509,8 +509,8 @@ let studentLocations = [
     "phone": "9867035052",
     "hobby": "Singing Class",
     "address": "3403, Marquise Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004755,
+    "lng": 72.828099
   },
   {
     "name": "Jackson Ignatius",
@@ -518,8 +518,8 @@ let studentLocations = [
     "phone": "7506990761",
     "hobby": "Hip-Hop Dance Class",
     "address": "A-2, LSG Casa Cielo, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.167542,
+    "lng": 73.111827
   },
   {
     "name": "Trisha Kumari",
@@ -536,8 +536,8 @@ let studentLocations = [
     "phone": "7900147346",
     "hobby": "Kathak Dance Class",
     "address": "1203, LSG Casa Elite, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.171147,
+    "lng": 73.112061
   },
   {
     "name": "Nandinee Giri",
@@ -545,8 +545,8 @@ let studentLocations = [
     "phone": "7900147346",
     "hobby": "Contemporary Dance Class",
     "address": "1203, LSG Casa Elite, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.171147,
+    "lng": 73.112061
   },
   {
     "name": "Mohamed Sulaiman",
@@ -554,8 +554,8 @@ let studentLocations = [
     "phone": "9980158245",
     "hobby": "Art & Craft Workshop",
     "address": "E-2103, The icon, Thanisandra, 560077",
-    "lat": null,
-    "lng": null
+    "lat": 13.049109,
+    "lng": 77.625258
   },
   {
     "name": "Diya Bhattacharya",
@@ -563,8 +563,8 @@ let studentLocations = [
     "phone": "7674039337",
     "hobby": "Kathak Dance Class",
     "address": "908, DT Casa Florea, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.162264,
+    "lng": 73.113692
   },
   {
     "name": "Anushree Bijali",
@@ -572,8 +572,8 @@ let studentLocations = [
     "phone": "7980638003",
     "hobby": "Contemporary Dance Class",
     "address": "T2-1614, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Anjana Sandil",
@@ -581,8 +581,8 @@ let studentLocations = [
     "phone": "8178276277",
     "hobby": "Kathak Dance Class",
     "address": "1-1603, Pebble Beach, Pune, 412101",
-    "lat": 18.6631477,
-    "lng": 73.7089
+    "lat": 18.664175,
+    "lng": 73.708513
   },
   {
     "name": "Mohamed Sulaiman",
@@ -590,8 +590,8 @@ let studentLocations = [
     "phone": "9980158245",
     "hobby": "Keyboard Music Class",
     "address": "E-2103, The icon, Thanisandra, 560077",
-    "lat": null,
-    "lng": null
+    "lat": 13.049109,
+    "lng": 77.625258
   },
   {
     "name": "Raju Wakchaure",
@@ -599,8 +599,8 @@ let studentLocations = [
     "phone": "9429646667",
     "hobby": "Guitar Music Class",
     "address": "1004, LSG Casa Paseo, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.171989,
+    "lng": 73.111064
   },
   {
     "name": "Rahul Soni",
@@ -608,8 +608,8 @@ let studentLocations = [
     "phone": "7000930835",
     "hobby": "Bollywood Dance Class",
     "address": "B-3312, Omkar Signet, Malad East, 400097",
-    "lat": null,
-    "lng": null
+    "lat": 19.183695,
+    "lng": 72.859127
   },
   {
     "name": "Rahul Soni",
@@ -617,8 +617,8 @@ let studentLocations = [
     "phone": "7000930835",
     "hobby": "Hip-Hop Dance Class",
     "address": "B-3312, Omkar Signet, Malad East, 400097",
-    "lat": null,
-    "lng": null
+    "lat": 19.183695,
+    "lng": 72.859127
   },
   {
     "name": "Neha Malik",
@@ -626,8 +626,8 @@ let studentLocations = [
     "phone": "9820546417",
     "hobby": "Bharatnatyam Dance Class",
     "address": "B-52018, Lodha Kiara, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004563,
+    "lng": 72.830025
   },
   {
     "name": "Neha Malik",
@@ -635,8 +635,8 @@ let studentLocations = [
     "phone": "9820546417",
     "hobby": "Kathak Dance Class",
     "address": "B-52018, Lodha Kiara, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004563,
+    "lng": 72.830025
   },
   {
     "name": "Neha Malik",
@@ -644,8 +644,8 @@ let studentLocations = [
     "phone": "9820546417",
     "hobby": "Contemporary Dance Class",
     "address": "B-52018, Lodha Kiara, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.004563,
+    "lng": 72.830025
   },
   {
     "name": "Vishwanath Kuckian",
@@ -653,8 +653,8 @@ let studentLocations = [
     "phone": "9819053625",
     "hobby": "Kathak Dance Class",
     "address": "W45-1205, Casa Fino A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234642,
+    "lng": 72.990098
   },
   {
     "name": "Neha Nelge",
@@ -662,8 +662,8 @@ let studentLocations = [
     "phone": "7972444085",
     "hobby": "Kathak Dance Class",
     "address": "A-2503, Dioro - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037589,
+    "lng": 72.877758
   },
   {
     "name": "Sandeep Yadav",
@@ -671,8 +671,8 @@ let studentLocations = [
     "phone": "9323918045",
     "hobby": "Bollywood Dance Class",
     "address": "T5-2301, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Sandeep Yadav",
@@ -680,8 +680,8 @@ let studentLocations = [
     "phone": "9323918045",
     "hobby": "Hip-Hop Dance Class",
     "address": "T5-2301, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Vikas Naik",
@@ -689,8 +689,8 @@ let studentLocations = [
     "phone": "9702040301",
     "hobby": "Guitar Music Class",
     "address": "604, Acharya Ashram CHSL, Borivali West, 400092",
-    "lat": 19.2361,
-    "lng": 72.8338
+    "lat": 19.228587,
+    "lng": 72.842124
   },
   {
     "name": "Anjali Upreti",
@@ -698,8 +698,8 @@ let studentLocations = [
     "phone": "8618496446",
     "hobby": "Bollywood Dance Class",
     "address": "1004, DT Casa Urbano, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.159482,
+    "lng": 73.115268
   },
   {
     "name": "Vinod Jagdale",
@@ -707,8 +707,8 @@ let studentLocations = [
     "phone": "8097659706",
     "hobby": "Bollywood Dance Class",
     "address": "304, Fairmont, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+    "lat": 18.665081,
+    "lng": 73.705532
   },
   {
     "name": "Pooja Gupta",
@@ -716,8 +716,8 @@ let studentLocations = [
     "phone": "9820355840",
     "hobby": "Bollywood Dance Class",
     "address": "B-5402, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502, 
+    "lng": 72.829588
   },
   {
     "name": "Seema Chakraborty",
@@ -725,8 +725,8 @@ let studentLocations = [
     "phone": "9819930118",
     "hobby": "Kathak Dance Class",
     "address": "401, Casa Greenwood A To E CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+     "lat": 19.232930,
+    "lng": 72.992297
   },
   {
     "name": "Palak Gupta",
@@ -734,8 +734,8 @@ let studentLocations = [
     "phone": "7738928652",
     "hobby": "Kathak Dance Class",
     "address": "705, Casa Sereno, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.233230,
+    "lng": 72.989474
   },
   {
     "name": "Palak Gupta",
@@ -743,8 +743,8 @@ let studentLocations = [
     "phone": "7738928652",
     "hobby": "Bollywood Dance Class",
     "address": "705, Casa Sereno, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.233230,
+    "lng": 72.989474
   },
   {
     "name": "Kapil Singh",
@@ -752,8 +752,8 @@ let studentLocations = [
     "phone": "8767655877",
     "hobby": "Hip-Hop Dance Class",
     "address": "509, EPIC Casa Aurelia, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.156830,
+    "lng": 73.115438
   },
   {
     "name": "Sandhya Jathar",
@@ -761,8 +761,8 @@ let studentLocations = [
     "phone": "9820436776",
     "hobby": "Bollywood Dance Class",
     "address": "A-3704, Estrella - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037412,
+    "lng":  72.877651
   },
   {
     "name": "Madan Mohan",
@@ -770,8 +770,8 @@ let studentLocations = [
     "phone": "9999339036",
     "hobby": "Bollywood Dance Class",
     "address": "20-1201, Augusta, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+     "lat": 18.6650693,
+    "lng": 73.7071583
   },
   {
     "name": "Anupam  Mondal",
@@ -779,8 +779,8 @@ let studentLocations = [
     "phone": "7021246867",
     "hobby": "Kathak Dance Class",
     "address": "1501, DT Casa Urbano, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.159482,
+    "lng": 73.115268
   },
   {
     "name": "Milan Rane",
@@ -788,8 +788,8 @@ let studentLocations = [
     "phone": "8879900118",
     "hobby": "Bollywood Dance Class",
     "address": "A-4602, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Shivani  Sharma",
@@ -797,8 +797,8 @@ let studentLocations = [
     "phone": "8144865817",
     "hobby": "Contemporary Dance Class",
     "address": "2303, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+     "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Mansi Kapoor",
@@ -806,8 +806,8 @@ let studentLocations = [
     "phone": "7718812007",
     "hobby": "Bollywood Dance Class",
     "address": "A-6101, World View, Worli, 400013",
-    "lat": 18.9448,
-    "lng": 72.8524
+    "lat": 19.002779,
+    "lng": 72.826809
   },
   {
     "name": "Amruta Malandkar",
@@ -815,8 +815,8 @@ let studentLocations = [
     "phone": "8898157816",
     "hobby": "Bollywood Dance Class",
     "address": "315, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Amruta Malandkar",
@@ -824,8 +824,8 @@ let studentLocations = [
     "phone": "8898157816",
     "hobby": "Contemporary Dance Class",
     "address": "315, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Divya Gupta",
@@ -833,8 +833,8 @@ let studentLocations = [
     "phone": "9930439641",
     "hobby": "Bollywood Dance Class",
     "address": "B-7703, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Shreya Gupta",
@@ -842,8 +842,8 @@ let studentLocations = [
     "phone": "9950420012",
     "hobby": "Bollywood Dance Class",
     "address": "B-3602, Altia - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038514,
+    "lng": 72.877814
   },
   {
     "name": "Soniya Kadam",
@@ -851,8 +851,8 @@ let studentLocations = [
     "phone": "9623200023",
     "hobby": "Guitar Music Class",
     "address": "505, Ashbridge, Pune, 412101",
-    "lat": 18.6616323,
-    "lng": 73.7089055
+    "lat": 18.661488,
+    "lng": 73.707804
   },
   {
     "name": "Shruti Vinay",
@@ -860,8 +860,8 @@ let studentLocations = [
     "phone": "9821674454",
     "hobby": "Kathak Dance Class",
     "address": "1119, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Vivek Shukla",
@@ -869,8 +869,8 @@ let studentLocations = [
     "phone": "8109357646",
     "hobby": "Singing Class",
     "address": "2005, Casa Fresco A To E CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.233811,
+    "lng": 72.989122
   },
   {
     "name": "Nitin Khambete",
@@ -878,8 +878,8 @@ let studentLocations = [
     "phone": "9833077713",
     "hobby": "Keyboard Music Class",
     "address": "2806, Casa Zest A To G CHSL, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234754,
+    "lng": 72.988108
   },
   {
     "name": "Ameya Chopde",
@@ -887,8 +887,8 @@ let studentLocations = [
     "phone": "9049543334",
     "hobby": "Keyboard Music Class",
     "address": "W07-701, Casa Fresco F To J CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.233618,
+    "lng": 72.989344
   },
   {
     "name": "Tanaya Lad",
@@ -896,8 +896,8 @@ let studentLocations = [
     "phone": "7506644262",
     "hobby": "Bollywood Dance Class",
     "address": "1121, Crown Thane Tower 4, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+   "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Vadivelan Sankar",
@@ -905,8 +905,8 @@ let studentLocations = [
     "phone": "9092137976",
     "hobby": "Bharatnatyam Dance Class",
     "address": "604, A-Wing, Dosti Pine, Kolshet Industrial Area, Thane West, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.226820,
+    "lng": 72.993252
   },
   {
     "name": "Pinky Jena",
@@ -923,8 +923,8 @@ let studentLocations = [
     "phone": "8109357646",
     "hobby": "Bollywood Dance Class",
     "address": "2005, Casa Fresco A To E CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.233811,
+    "lng": 72.989122
   },
   {
     "name": "Nandini Kahar",
@@ -932,8 +932,8 @@ let studentLocations = [
     "phone": "9869628243",
     "hobby": "Art & Craft Workshop",
     "address": "F-306, RR Casa Estela, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.156071,
+    "lng": 73.114229
   },
   {
     "name": "Tanvi Anuse",
@@ -941,8 +941,8 @@ let studentLocations = [
     "phone": "8767885068",
     "hobby": "Art & Craft Workshop",
     "address": "T7-804, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Yamini Mervikar",
@@ -950,8 +950,8 @@ let studentLocations = [
     "phone": "8433838904",
     "hobby": "Guitar Music Class",
     "address": "1604, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+     "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Keerthi Venkat",
@@ -959,8 +959,8 @@ let studentLocations = [
     "phone": "7382484879",
     "hobby": "Singing Class",
     "address": "W23-1502, Casa Greenwood A To E CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.232930,
+    "lng": 72.992297
   },
   {
     "name": "Shraddha  Attal",
@@ -995,8 +995,8 @@ let studentLocations = [
     "phone": "9619101080",
     "hobby": "Cajon Class",
     "address": "2201, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Raymond Fernandez",
@@ -1004,8 +1004,8 @@ let studentLocations = [
     "phone": "9619101080",
     "hobby": "Guitar Music Class",
     "address": "2201, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Sejal Suvarna",
@@ -1022,8 +1022,8 @@ let studentLocations = [
     "phone": "8983674032",
     "hobby": "Keyboard Music Class",
     "address": "602, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+     "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Shital More",
@@ -1031,8 +1031,8 @@ let studentLocations = [
     "phone": "9004262534",
     "hobby": "Guitar Music Class",
     "address": "27-2303, Sawgrass, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+    "lat": 18.663958,
+    "lng": 73.704742
   },
   {
     "name": "Vilas Muttha",
@@ -1040,8 +1040,8 @@ let studentLocations = [
     "phone": "8888811149",
     "hobby": "Keyboard Music Class",
     "address": "14-2002, Ashbridge, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+   "lat": 18.661488,
+    "lng": 73.707804
   },
   {
     "name": "Prachi Bhatele",
@@ -1049,8 +1049,8 @@ let studentLocations = [
     "phone": "8639243044",
     "hobby": "Singing Class",
     "address": "905, Sawgrass, Pune, 412101",
-    "lat": 18.6640941,
-    "lng": 73.7042243
+   "lat": 18.663958,
+    "lng": 73.704742
   },
   {
     "name": "Sarvesh Ambekar ",
@@ -1058,8 +1058,8 @@ let studentLocations = [
     "phone": "9004143859",
     "hobby": "Keyboard Music Class",
     "address": "1501, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Manjusha Suresh ",
@@ -1067,8 +1067,8 @@ let studentLocations = [
     "phone": "7025013289",
     "hobby": "Guitar Music Class",
     "address": "306, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Niha  Parkar",
@@ -1076,8 +1076,8 @@ let studentLocations = [
     "phone": "9607368392",
     "hobby": "Singing Class",
     "address": "1001, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Hemant Rawal",
@@ -1094,8 +1094,8 @@ let studentLocations = [
     "phone": "9869628243",
     "hobby": "Art & Craft Workshop",
     "address": "F-306, RR Casa Estela, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.156071,
+    "lng": 73.114229
   },
   {
     "name": "Raj Menon",
@@ -1103,8 +1103,8 @@ let studentLocations = [
     "phone": "9987572363",
     "hobby": "Singing Class",
     "address": "1705, LSG Casa Elite, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.171147,
+    "lng": 73.112061
   },
   {
     "name": "Umakant Dabhade",
@@ -1112,8 +1112,8 @@ let studentLocations = [
     "phone": "8976639356",
     "hobby": "Singing Class",
     "address": "306, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+     "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Dadabhau Chaudhari",
@@ -1121,8 +1121,8 @@ let studentLocations = [
     "phone": "9320033100",
     "hobby": "Singing Class",
     "address": "2209, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Anuraj Saini",
@@ -1157,8 +1157,8 @@ let studentLocations = [
     "phone": "7024153662",
     "hobby": "Keyboard Music Class",
     "address": "606, LSG Casa Vista, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.169642, 
+    "lng": 73.111814
   },
   {
     "name": "A S",
@@ -1193,8 +1193,8 @@ let studentLocations = [
     "phone": "8689818982",
     "hobby": "Kathak Dance Class",
     "address": "2409, Crown Thane Tower 4, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213020,
+    "lng": 72.989533
   },
   {
     "name": "Vipula Mohane",
@@ -1202,8 +1202,8 @@ let studentLocations = [
     "phone": "9004328861",
     "hobby": "Guitar Music Class",
     "address": "1104, Altia - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038514,
+    "lng": 72.877814
   },
   {
     "name": "Benita Togani",
@@ -1256,8 +1256,8 @@ let studentLocations = [
     "phone": "9324625447",
     "hobby": "Singing Class",
     "address": "B-3002, World View, Worli, 400013",
-    "lat": 18.9448,
-    "lng": 72.8524
+    "lat": 19.002779,
+    "lng": 72.826809
   },
   {
     "name": "Sangeeta Nair",
@@ -1265,8 +1265,8 @@ let studentLocations = [
     "phone": "9930074239",
     "hobby": "Keyboard Music Class",
     "address": "1502, Dioro - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037589,
+    "lng": 72.877758
   },
   {
     "name": "Prajwal Deshmukh ",
@@ -1292,8 +1292,8 @@ let studentLocations = [
     "phone": "9623080010",
     "hobby": "Singing Class",
     "address": "503, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Anamika  Das",
@@ -1310,8 +1310,8 @@ let studentLocations = [
     "phone": "9833833368",
     "hobby": "Guitar Music Class",
     "address": "D-1803, Casa Foresta, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180809,
+    "lng": 73.097334
   },
   {
     "name": "Bindu Birla",
@@ -1319,8 +1319,8 @@ let studentLocations = [
     "phone": "8369415197",
     "hobby": "Singing Class",
     "address": "207, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Sanjay  Parekh",
@@ -1355,8 +1355,8 @@ let studentLocations = [
     "phone": "8108466222",
     "hobby": "Keyboard Music Class",
     "address": "A-902, Marquise Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+   "lat": 19.004755,
+    "lng": 72.828099
   },
   {
     "name": "Riddhima Sanwal",
@@ -1364,8 +1364,8 @@ let studentLocations = [
     "phone": "9625560776",
     "hobby": "Keyboard Music Class",
     "address": "309, Crown Thane Tower 5, Majiwada, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.213671,
+    "lng": 72.990119
   },
   {
     "name": "Ruhi Mallick",
@@ -1373,8 +1373,8 @@ let studentLocations = [
     "phone": "8800141531",
     "hobby": "Singing Class",
     "address": "602, Pebble Beach, Pune, 412101",
-    "lat": 18.6631477,
-    "lng": 73.7089
+     "lat": 18.664175,
+    "lng": 73.708513
   },
   {
     "name": "AthreeTechnologies PvtLtd",
@@ -1382,8 +1382,8 @@ let studentLocations = [
     "phone": "9987066400",
     "hobby": "Guitar Music Class",
     "address": "401, Pebble Beach, Pune, 412101",
-    "lat": 18.6631477,
-    "lng": 73.7089
+    "lat": 18.664175,
+    "lng": 73.708513
   },
   {
     "name": "Meghna Jain",
@@ -1400,8 +1400,8 @@ let studentLocations = [
     "phone": "9757224045",
     "hobby": "Keyboard Music Class",
     "address": "902, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Pranjal Arekar",
@@ -1409,8 +1409,8 @@ let studentLocations = [
     "phone": "9920920979",
     "hobby": "Guitar Music Class",
     "address": "D-704, Acharya Ashram CHSL, Borivali West, 400092",
-    "lat": 19.2361,
-    "lng": 72.8338
+    "lat": 19.228587,
+    "lng": 72.842124
   },
   {
     "name": "Dhanashree Yelkar",
@@ -1454,8 +1454,8 @@ let studentLocations = [
     "phone": "9820401042",
     "hobby": "Guitar Music Class",
     "address": "B-1603, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Swapnil  Dalal",
@@ -1463,8 +1463,8 @@ let studentLocations = [
     "phone": "9769621330",
     "hobby": "Keyboard Music Class",
     "address": "1202, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Swapnil  Dalal",
@@ -1472,8 +1472,8 @@ let studentLocations = [
     "phone": "9769621330",
     "hobby": "Guitar Music Class",
     "address": "1202, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+   "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Medhavi  Sagar",
@@ -1481,8 +1481,8 @@ let studentLocations = [
     "phone": "9821881051",
     "hobby": "Guitar Music Class",
     "address": "1-504, Casa Woodlands, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228413,
+    "lng": 73.048121
   },
   {
     "name": "Deepa Natarajan",
@@ -1499,8 +1499,8 @@ let studentLocations = [
     "phone": "9820401042",
     "hobby": "Keyboard Music Class",
     "address": "B-1603, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Medhavi  Sagar",
@@ -1508,8 +1508,8 @@ let studentLocations = [
     "phone": "9821881051",
     "hobby": "Keyboard Music Class",
     "address": "1-504, Casa Woodlands, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228413,
+    "lng": 73.048121
   },
   {
     "name": "Varsha Agarwal ",
@@ -1517,8 +1517,8 @@ let studentLocations = [
     "phone": "9810308922",
     "hobby": "Keyboard Music Class",
     "address": "903, Altia - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.038514,
+    "lng": 72.877814
   },
   {
     "name": "Radha Shinde",
@@ -1535,8 +1535,8 @@ let studentLocations = [
     "phone": "9508949337",
     "hobby": "Guitar Music Class",
     "address": "C1-405, Casa Sereno, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.233230,
+    "lng": 72.989474
   },
   {
     "name": "Pallavi  Patil ",
@@ -1562,8 +1562,8 @@ let studentLocations = [
     "phone": "8238578079",
     "hobby": "Guitar Music Class",
     "address": "B-5101, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Hitisha Prajapati ",
@@ -1571,8 +1571,8 @@ let studentLocations = [
     "phone": "9819726795",
     "hobby": "Guitar Music Class",
     "address": "3204, Estrella - New Cuffe Parade, Sion, 400037",
-    "lat": 19.0167,
-    "lng": 72.85
+    "lat": 19.037412,
+    "lng":  72.877651
   },
   {
     "name": "Leena Jadhav ",
@@ -1580,8 +1580,8 @@ let studentLocations = [
     "phone": "9987134641",
     "hobby": "Guitar Music Class",
     "address": "M-GR01, DT Casa Urbano, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.159673,
+    "lng": 73.116388
   },
   {
     "name": "Tanvi Rastogi ",
@@ -1616,8 +1616,8 @@ let studentLocations = [
     "phone": "9082559401",
     "hobby": "Guitar Music Class",
     "address": "704, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Ankit Sharma",
@@ -1625,8 +1625,8 @@ let studentLocations = [
     "phone": "9205054075",
     "hobby": "Guitar Music Class",
     "address": "T1-2211, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Rohil Verma",
@@ -1670,8 +1670,8 @@ let studentLocations = [
     "phone": "9250920972",
     "hobby": "Singing Class",
     "address": "S-1803, DT Casa Urbano, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.159010,
+    "lng": 73.114879
   },
   {
     "name": "Avinash  Hingorani",
@@ -1733,8 +1733,8 @@ let studentLocations = [
     "phone": "9765646736",
     "hobby": "Guitar Music Class",
     "address": "B-1501, LSG Casa Vista, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.169642, 
+    "lng": 73.111814
   },
   {
     "name": "Ravi Gupta",
@@ -1742,8 +1742,8 @@ let studentLocations = [
     "phone": "9223502949",
     "hobby": "Keyboard Music Class",
     "address": "606, LSG Casa Vista, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.169642, 
+    "lng": 73.111814
   },
   {
     "name": "Karan Bhawnani",
@@ -1751,8 +1751,8 @@ let studentLocations = [
     "phone": "9820414794",
     "hobby": "Cajon Class",
     "address": "A-6404, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Seema  Jain",
@@ -1760,8 +1760,8 @@ let studentLocations = [
     "phone": "9820889288",
     "hobby": "Singing Class",
     "address": "A-6003, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Rakesh Shetty ",
@@ -1778,8 +1778,8 @@ let studentLocations = [
     "phone": "9833883061",
     "hobby": "Singing Class",
     "address": "A-7002, Parkside Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003910,
+    "lng": 72.828909
   },
   {
     "name": "Pooja Gupta",
@@ -1787,8 +1787,8 @@ let studentLocations = [
     "phone": "9820355840",
     "hobby": "Singing Class",
     "address": "B-5402, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Subhayu Sen",
@@ -1805,8 +1805,8 @@ let studentLocations = [
     "phone": "7304226316",
     "hobby": "Guitar Music Class",
     "address": "406, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Kedar Kharkar",
@@ -1841,8 +1841,8 @@ let studentLocations = [
     "phone": "9760155911",
     "hobby": "Bollywood Dance Class",
     "address": "W36-2003, Casa Celeste A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234550,
+    "lng": 72.991771
   },
   {
     "name": "Karishma  Soni",
@@ -1850,8 +1850,8 @@ let studentLocations = [
     "phone": "8652117605",
     "hobby": "Bharatnatyam Dance Class",
     "address": "901, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Karishma  Soni",
@@ -1859,8 +1859,8 @@ let studentLocations = [
     "phone": "8652117605",
     "hobby": "Kathak Dance Class",
     "address": "901, Casa Greenville, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.228869,
+    "lng": 73.050480
   },
   {
     "name": "Vikkalp Gandhi",
@@ -1868,8 +1868,8 @@ let studentLocations = [
     "phone": "9930281944",
     "hobby": "Art & Craft Workshop",
     "address": "1202, LSG Casa Lakeside, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+    "lat": 19.168740,
+    "lng": 73.112147
   },
   {
     "name": "Asha Nayak",
@@ -1877,8 +1877,8 @@ let studentLocations = [
     "phone": "9892617121",
     "hobby": "Kathak Dance Class",
     "address": "3801, Parkside Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003910,
+    "lng": 72.828909
   },
   {
     "name": "Vinny Kumar ",
@@ -1922,8 +1922,8 @@ let studentLocations = [
     "phone": "9664042553",
     "hobby": "Keyboard Music Class",
     "address": "T7-3107, Crown Thane Tower 6 & 7, Majiwada, 400608",
-    "lat": null,
-    "lng": null
+    "lat": 19.212908,
+    "lng": 72.989690
   },
   {
     "name": "Satyajit  Pawar",
@@ -1958,8 +1958,8 @@ let studentLocations = [
     "phone": "8446588873",
     "hobby": "Bollywood Dance Class",
     "address": "19-1108, Augusta, Pune, 412101",
-    "lat": 19.4615,
-    "lng": 74.2806
+     "lat": 18.6650693,
+    "lng": 73.7071583
   },
   {
     "name": "Madhurima Ranjan",
@@ -1967,8 +1967,8 @@ let studentLocations = [
     "phone": "9928966653",
     "hobby": "Kathak Dance Class",
     "address": "102, Pebble Beach, Pune, 412101",
-    "lat": 18.6631477,
-    "lng": 73.7089
+     "lat": 18.664175,
+    "lng": 73.708513
   },
   {
     "name": "Neeraj Sharma ",
@@ -1976,8 +1976,8 @@ let studentLocations = [
     "phone": "7509033291",
     "hobby": "Guitar Music Class",
     "address": "1601, EPIC Casa Aurelia, Dombivli, 421204",
-    "lat": 19.3173,
-    "lng": 73.0597
+   "lat": 19.156830,
+    "lng": 73.115438
   },
   {
     "name": "Malti  Kandari ",
@@ -1985,8 +1985,8 @@ let studentLocations = [
     "phone": "8828220114",
     "hobby": "Bollywood Dance Class",
     "address": "T1-2212, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Asha Rathod",
@@ -2003,8 +2003,8 @@ let studentLocations = [
     "phone": "9664369380",
     "hobby": "Hip-Hop Dance Class",
     "address": "B-5501, Allura Chsl, Worli, 400018",
-    "lat": 19.0167,
-    "lng": 72.8167
+    "lat": 19.003502,
+    "lng": 72.829588
   },
   {
     "name": "Hemangini Sahajpal",
@@ -2039,8 +2039,8 @@ let studentLocations = [
     "phone": "8828220114",
     "hobby": "Guitar Music Class",
     "address": "T1-2212, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Malti  Kandari ",
@@ -2048,8 +2048,8 @@ let studentLocations = [
     "phone": "8828220114",
     "hobby": "Contemporary Dance Class",
     "address": "T1-2212, Crown Thane Tower 1 & 2, Thane West, 400601",
-    "lat": null,
-    "lng": null
+    "lat": 19.211843,
+    "lng": 72.988577
   },
   {
     "name": "Sweta Rawal",
@@ -2093,8 +2093,8 @@ let studentLocations = [
     "phone": "9757402677",
     "hobby": "Kathak Dance Class",
     "address": "B1-404, Casa Sereno, Mumbai, 421302",
-    "lat": 19.07283,
-    "lng": 72.88261
+    "lat": 19.233230,
+    "lng": 72.989474
   },
   {
     "name": "Aarooshee Sood",
@@ -2111,8 +2111,8 @@ let studentLocations = [
     "phone": "9004077082",
     "hobby": "Art & Craft Workshop",
     "address": "D-303, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Aditya Abhishek",
@@ -2120,8 +2120,8 @@ let studentLocations = [
     "phone": "9599152014",
     "hobby": "Kathak Dance Class",
     "address": "W07-1004, Casa Fresco F To J CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+   "lat": 19.233618,
+    "lng": 72.989344
   },
   {
     "name": "Mayank Tiwari",
@@ -2129,8 +2129,8 @@ let studentLocations = [
     "phone": "9009438275",
     "hobby": "Bollywood Dance Class",
     "address": "401, Casa Celeste A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+   "lat": 19.234550,
+    "lng": 72.991771
   },
   {
     "name": "Neha Srivastava ",
@@ -2156,8 +2156,8 @@ let studentLocations = [
     "phone": "9009438275",
     "hobby": "Hip-Hop Dance Class",
     "address": "401, Casa Celeste A To G CHSL, Thane West, 400607",
-    "lat": null,
-    "lng": null
+    "lat": 19.234550,
+    "lng": 72.991771
   },
   {
     "name": "Ashvini  Tarkar",
@@ -2165,8 +2165,8 @@ let studentLocations = [
     "phone": "9503875829",
     "hobby": "Kathak Dance Class",
     "address": "2404, Casa Fiora, Dombivili, 421204",
-    "lat": null,
-    "lng": null
+    "lat": 19.180173,
+    "lng": 73.095313
   },
   {
     "name": "Gargi  Shetty ",
@@ -2187,3 +2187,5 @@ let studentLocations = [
     "lng": 73.7049652
   }
 ];
+
+export default studentLocations;

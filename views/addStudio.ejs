@@ -71,10 +71,11 @@
   <%- include("partials/navbar", { page: 'studio' }) %> 
 <div class="form-section">
   <div class="form-container">
-    <h2>Add New Studio</h2>
-    <div id="statusMessage"></div>
-    <label for="name">Studio Name</label>
-    <input type="text" id="name" placeholder="e.g., LordZway Music Store" required>
+    <form id="studentForm" onsubmit="submitStudio(); return false">
+      <h2>Add New Studio</h2>
+      <div id="statusMessage"></div>
+      <label for="name">Studio Name</label>
+      <input type="text" id="name" placeholder="e.g., LordZway Music Store" required>
 
     <label for="phone">Phone</label>
     <input type="text" id="phone" placeholder="e.g., 9820929205" required>
@@ -97,7 +98,8 @@
     <label for="lng">Longitude</label>
     <input type="number" id="lng" step="any" required>
 
-    <button onclick="submitStudio()">Add Studio</button>
+    <button type="submit">Add Studio</button>
+    </form>
   </div>
 </div>
 

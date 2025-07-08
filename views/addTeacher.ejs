@@ -72,6 +72,7 @@
 
   <div class="form-section">
   <div class="form-container">
+    <form id="teacherForm" onsubmit="submitTeacher(); return false">
     <h2>Add New Teacher</h2>
     <div id="statusMessage"></div>
 
@@ -96,7 +97,8 @@
     <label for="lng">Longitude</label>
     <input type="number" id="lng" step="any" required>
 
-    <button onclick="submitTeacher()">Add Teacher</button>
+    <button type="submit">Add Teacher</button>
+    </form>
   </div>
   </div>
 
