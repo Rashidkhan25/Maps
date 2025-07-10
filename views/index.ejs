@@ -293,7 +293,7 @@ window.findNearestStudio = function(lat, lng, hobby) {
 
           const marker = L.marker([studio.lat, studio.lng], {
             icon: purpleIcon,
-          }).bindPopup(`<strong>${studio.name}</strong><br><b>Price:</b> Rs ${studio.price}<br><b>Batch:</b> ${studio.batch}<br><b>Address:</b> ${studio.address}`);
+          }).bindPopup(`<strong>${studio.name}</strong><br><b>Price:</b> ${studio.price}<br><b>Batch:</b> ${studio.batch}<br><b>Address:</b> ${studio.address}`);
           map.addLayer(marker);
           studio.markerRef = marker;
           studioMarkers.push(marker);
