@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import mongoose from 'mongoose';
-import studioData from './public/js/TeachersData.js'; // Make sure it's exported properly as default
-import Studio from './models/Teacher.js';
+import studioData from './public/js/studentData.js'; // Make sure it's exported properly as default
+import Studio from './models/Student.js';
 
 try {
   await mongoose.connect(process.env.MONGODB_URI);

@@ -6,11 +6,11 @@ const teacherSchema = new mongoose.Schema({
     required: true
   },
   price: {
-    type: String, // or Number if it will eventually be numeric
+    type: String,
     default: ""
   },
   hobby: {
-    type: [String], // stored as an array of strings
+    type: [String],
     required: true
   },
   address: {

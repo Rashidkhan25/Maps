@@ -290,7 +290,7 @@ window.findNearestStudio = function(lat, lng, hobby) {
 
           const marker = L.marker([studio.lat, studio.lng], {
             icon: purpleIcon,
-          }).bindPopup(`<strong>${studio.name}</strong><br>${studio.address}`);
+          }).bindPopup(`<strong>${studio.name}</strong><br>Price: Rs. ${studio.price}<br>Batch: ${studio.batch}<br>${studio.address}`);
           map.addLayer(marker);
           studio.markerRef = marker;
           studioMarkers.push(marker);
@@ -363,6 +363,7 @@ window.findNearestStudio = function(lat, lng, hobby) {
           }).bindPopup(
             `<strong>${student.name}</strong><br>
                    Hobby: ${student.hobby}<br>
+                   Phone No: ${student.phone}<br>
                    Address: ${student.address}` +
               (matchedStudio
                 ? `<br><em>Matched with ${matchedStudio.name}</em>`
@@ -406,7 +407,8 @@ window.findNearestStudio = function(lat, lng, hobby) {
           }).bindPopup(
             `<strong>${teacher.name}</strong><br>
             Price: Rs ${teacher.price}<br>
-               Address: ${teacher.address}`
+            Hobby: ${teacher.hobby}<br>
+            Address: ${teacher.address}`
           );
           teacherMarker.setLatLng([
             teacher.lat + 0.002, 
