@@ -75,6 +75,9 @@
         border-radius: 6px;
         cursor: pointer;
       }
+      .leaflet-popup-content strong {
+        font-size: 16px;
+      }
       .distance-label {
         background-color: #ffffff;
         border: 1px solid #ccc;
@@ -290,7 +293,7 @@ window.findNearestStudio = function(lat, lng, hobby) {
 
           const marker = L.marker([studio.lat, studio.lng], {
             icon: purpleIcon,
-          }).bindPopup(`<strong>${studio.name}</strong><br>Price: Rs. ${studio.price}<br>Batch: ${studio.batch}<br>${studio.address}`);
+          }).bindPopup(`<strong>${studio.name}</strong><br><b>Price:</b> Rs ${studio.price}<br><b>Batch:</b> ${studio.batch}<br><b>Address:</b> ${studio.address}`);
           map.addLayer(marker);
           studio.markerRef = marker;
           studioMarkers.push(marker);
@@ -362,9 +365,9 @@ window.findNearestStudio = function(lat, lng, hobby) {
             icon,
           }).bindPopup(
             `<strong>${student.name}</strong><br>
-                   Hobby: ${student.hobby}<br>
-                   Phone No: ${student.phone}<br>
-                   Address: ${student.address}` +
+                   <b>Hobby:</b> ${student.hobby}<br>
+                   <b>Phone No:</b> ${student.phone}<br>
+                   <b>Address:</b> ${student.address}` +
               (matchedStudio
                 ? `<br><em>Matched with ${matchedStudio.name}</em>`
                 : `<br><button onclick="findNearestStudio(${student.lat}, ${
@@ -406,9 +409,9 @@ window.findNearestStudio = function(lat, lng, hobby) {
             icon: redIcon,
           }).bindPopup(
             `<strong>${teacher.name}</strong><br>
-            Price: Rs ${teacher.price}<br>
-            Hobby: ${teacher.hobby}<br>
-            Address: ${teacher.address}`
+            <b>Price:</b> Rs ${teacher.price}<br>
+            <b>Hobby:</b> ${teacher.hobby}<br>
+            <b>Address:</b> ${teacher.address}`
           );
           teacherMarker.setLatLng([
             teacher.lat + 0.002, 
