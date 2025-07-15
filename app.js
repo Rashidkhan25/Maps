@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const Student = require('./models/Student');
 const Studio = require('./models/Studio');
 const Teacher = require('./models/Teacher');
+const studentSearch = require("./routes/student");
 
 require('dotenv').config();
 
@@ -20,6 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+app.use("/api/students", studentSearch);
 
 // Routes for pages
 app.get("/", (req, res) => res.render("index"));

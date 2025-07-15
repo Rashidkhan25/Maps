@@ -94,7 +94,19 @@
     <input type="text" id="phone" placeholder="e.g., 9876543210" required>
 
     <label for="hobby">Hobby:</label>
-    <input type="text" id="hobby" placeholder="e.g., Guitar Music Class" required>
+<select id="hobby" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;">
+  <option value="" disabled selected>Select a hobby</option>
+  <option value="Guitar Music Class">Guitar Music Class</option>
+  <option value="Keyboard Music Class">Keyboard Music Class</option>
+  <option value="Kathak Dance Class">Kathak Dance Class</option>
+  <option value="Bollywood Dance Class">Bollywood Dance Class</option>
+  <option value="Hip‑hop Dance Class">Hip‑hop Dance Class</option>
+  <option value="Singing Class">Singing Class</option>
+   <option value="Bharatnatyam Dance Class">Bharatnatyam Dance Class</option>
+  <option value="Art & Craft Workshop">Art & Craft Workshop</option>
+  <option value="Contemporary Dance Class">Contemporary Dance Class</option>
+  <option value="Cajon Class">Cajon Class</option>
+</select>
 
     <label for="address">Address:</label>
     <input type="text" id="address" placeholder="e.g., Thane West, Mumbai" required>
@@ -115,7 +127,7 @@
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
-      const hobby = document.getElementById('hobby').value.trim();
+      const hobby = document.getElementById('hobby').value;
       const address = document.getElementById('address').value.trim();
       const lat = parseFloat(document.getElementById('lat').value);
       const lng = parseFloat(document.getElementById('lng').value);
@@ -143,7 +155,7 @@
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('phone').value = '';
-        document.getElementById('hobby').value = '';
+        document.getElementById('hobby').selectedIndex = 0;
         document.getElementById('address').value = '';
         document.getElementById('lat').value = '';
         document.getElementById('lng').value = '';
